@@ -1,0 +1,7 @@
+<span *ngIf="message" class="error-popup" matSnackBarLabel>
+  {{ message }}
+  <span matSnackBarActions>
+    <button mat-button matSnackBarAction (click)="close()">Close</button>
+  </span>
+</span>
+

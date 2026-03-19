@@ -1,0 +1,71 @@
+.player-card {
+  margin: 5%;
+}
+
+.player-container {
+  background: #0C2340
+}
+
+.player-name {
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Anton", "Oswald", sans-serif;
+}
+
+.player-info {
+  color: white;
+  font-size: clamp(.7rem, 1.5vw, 1.8rem);
+}
+
+.spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.player-photo img,
+.player-photo {
+  width: 70%;
+  max-width: 80%;
+  height: 90%;
+  object-fit: cover;
+  outline: firebrick solid thick;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: minmax(350px, 1fr) 4fr;
+  gap: .2rem;
+  width: 80%;
+  place-items: center;
+}
+
+.player-bio p, h3 {
+  margin: 2% 0 0 0;
+}
+
+.player-bio {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .player-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-photo img,
+  .player-photo {
+    max-width: 90%;
+  }
+}
