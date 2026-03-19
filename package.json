@@ -1,0 +1,27 @@
+{
+  "name": "developer-assessment",
+  "version": "1.0.0",
+  "description": "Developer assessment repository for leaderboard application",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "install:all": "npm install"
+  },
+  "keywords": [
+    "graphql",
+    "assessment",
+    "angular",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^21.1.0",
+    "json-graphql-server": "^2.3.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
+
